@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ApolloProvider } from "react-apollo";
 import { InMemoryCache } from 'apollo-cache-inmemory';
-import { ENDPOINT, TOKEN } from './configure'
+//import { ENDPOINT, TOKEN } from './configure'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -11,9 +11,9 @@ import ApolloClient from "apollo-boost";
 const cache = new InMemoryCache();
 
 const client = new ApolloClient({
-  uri: ENDPOINT,
+  uri: process.env.ENDPOINT,
   headers: {
-    'Authorization': `Bearer ${TOKEN}`,
+    'Authorization': `Bearer ${process.env.TOKEN}`,
   },
   cache
 });
