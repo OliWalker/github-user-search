@@ -11,7 +11,7 @@ import ApolloClient from "apollo-boost";
 const cache = new InMemoryCache();
 
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_ENDPOINT,
+  uri: process.env.REACT_APP_GITHUB_ENDPOINT,
   headers: {
     'Authorization': `Bearer ${process.env.REACT_APP_TOKEN}`,
   },
