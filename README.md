@@ -43,13 +43,17 @@ git clone https://github.com/OliWalker/github-user-search.git
 
 2. Then use the old :
 
-  
-
 ```
 
 npm install
 
 ```
+
+3. Add a ```.env``` file following the ```.env.example``` 
+
+4. Hit ```npm start``` !
+
+
 
 ## Contributing
 
