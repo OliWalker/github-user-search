@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ApolloProvider } from "react-apollo";
 import { InMemoryCache } from 'apollo-cache-inmemory';
-import { endpoint, token } from './config'
+import { endpoint, token } from './configure'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
