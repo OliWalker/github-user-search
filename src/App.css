@@ -28,6 +28,10 @@ body {
   align-items: center;
   margin-top: 5vh;
 }
+.main_content h1 {
+  padding: 0 5vw;
+  text-align: center;
+}
 
 .main_heading {
   font-family: 'Montserrat', sans-serif;
