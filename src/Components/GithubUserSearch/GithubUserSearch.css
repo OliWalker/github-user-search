@@ -1,0 +1,90 @@
+input,
+li {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.github__search__input {
+  max-width: 90vw;
+  position: relative;
+  box-shadow:0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  border-radius: 6px;
+}
+
+.github__search__input:hover {
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08) !important;
+  transition: all .15s ease-in;
+}
+
+.github__search__input div {
+  display: flex;
+}
+
+.github__search__input input {
+  padding: 10px;
+  font-size:22px;
+  border: none;
+  max-width: 70vw;
+  min-width: 40vw;
+  display: inline;
+}
+
+.github__search__input svg {
+  border-top-right-radius: 6px;
+  width: 75px;
+  height: 75px;
+  color: white; 
+  background-color: #444;
+}
+
+.github__search__user__list {
+  background-color: white;
+  padding: 25px 0px;
+  position: absolute;
+  margin-top: 0;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  width: 100%;
+}
+
+.github__search__user__list li {
+  list-style: none;
+}
+
+.github__search__user__list span {
+  margin-left: 25px;
+  font-size: 25px;
+  color: grey;
+}
+
+.github__user { 
+  transform: scale(1);
+  transition: all .15s ease-in !important;
+}
+
+.github__user a {
+  padding: 10px 20px; 
+  display: flex;
+  align-items: center;
+}
+
+.github__user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+}
+
+.github__user:hover,
+.github__user a:focus {
+  transition: all .15s ease-in !important;
+  background-color: #bebebe; 
+  transform: scale(1.03);
+}
+
+.github__user:hover span,
+.github__user a:focus span {
+  color: black !important;
+  transition: all .2s ease-in !important;
+}
